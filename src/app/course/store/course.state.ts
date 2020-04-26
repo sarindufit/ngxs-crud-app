@@ -1,6 +1,6 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
 import { Course } from './../model/course.model';
-import { AddCourse, UpdateCourse, GetCourses, DeleteCourse, SetSelectedCourse } from './../store/course.actions';
+import { AddCourse, UpdateCourse, GetCourses, DeleteCourse } from './../store/course.actions';
 import { CourseService } from './../services/course.service';
 import { tap } from 'rxjs/operators';
 import { Router } from '@angular/router';

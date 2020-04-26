@@ -1,10 +1,10 @@
-import { HttpClientModule } from '@angular/common/http';
+import { CreateCourseComponent } from './components/create-course/create-course.component';
+import { CoursesListComponent } from './components/courses-list/courses-list.component';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NgModule } from '@angular/core';
 import { CourseService } from './services/course.service';
-import { CoursesListComponent } from './components/courses-list/courses-list.component';
-import { CreateCourseComponent } from './components/create-course/create-course.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [CoursesListComponent, CreateCourseComponent],
@@ -14,7 +14,6 @@ import { CreateCourseComponent } from './components/create-course/create-course.
     HttpClientModule
   ],
   providers: [CourseService],
-  bootstrap: [],
   exports: [CoursesListComponent, CreateCourseComponent]
 })
-export class CourseModule {}
+export class CourseModule { }

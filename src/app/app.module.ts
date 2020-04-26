@@ -1,7 +1,7 @@
-import { CourseState } from './course/store/course.state';
-import { CoursesListComponent } from './course/components/courses-list/courses-list.component';
-import { CreateCourseComponent } from './course/components/create-course/create-course.component';
 import { CourseModule } from './course/course.module';
+import { CreateCourseComponent } from './course/components/create-course/create-course.component';
+import { CoursesListComponent } from './course/components/courses-list/courses-list.component';
+import { CourseState } from './course/store/course.state';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgxsModule } from '@ngxs/store';

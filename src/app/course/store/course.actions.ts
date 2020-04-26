@@ -24,10 +24,3 @@ export class DeleteCourse {
   constructor(public id: string) {
   }
 }
-
-export class SetSelectedCourse {
-  static readonly type = '[Course] Set';
-
-  constructor(public payload: Course) {
-  }
-}
